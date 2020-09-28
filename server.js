@@ -12,7 +12,7 @@ const cors = require("cors");
 //cors
 //Define Port
 const app = express();
-const port = 5002;
+const port = process.env.PORT || 5002;
 app.use(cors())
 app.use('/uploads', express.static("uploads"))
 app.use(bodyParser.json({limit: '50mb'}));
