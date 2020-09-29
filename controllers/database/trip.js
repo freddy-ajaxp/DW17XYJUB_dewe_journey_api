@@ -1,6 +1,6 @@
-const { Trip: trip } = require("../../models");
+// const { Trip: trip } = require("../../models");
 const { Tripx: tripx } = require("../../models");
-const { User } = require("../../models");
+// const { User } = require("../../models");
 const { Userx } = require("../../models");
 const bycript = require("bcrypt");
 const jwt = require("jsonwebtoken");

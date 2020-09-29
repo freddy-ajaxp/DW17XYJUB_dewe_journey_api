@@ -1,8 +1,8 @@
-const { Bookmark } = require("../../models/");
+// const { Bookmark } = require("../../models/");
 const { Bookmarkx } = require("../../models/");
-const {user: User} = require("../../models/");
+// const {user: User} = require("../../models/");
 const {Userx} = require("../../models/");
-const { Trip } = require("../../models/");
+// const { Trip } = require("../../models/");
 const { Tripx } = require("../../models/");
 const bycript = require("bcrypt");
 const jwt = require("jsonwebtoken");

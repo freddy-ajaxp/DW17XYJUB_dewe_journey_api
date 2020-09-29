@@ -4,18 +4,16 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Tripx extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
     static associate(models) {
       // define association here
       Tripx.belongsTo(models.Userx, {
         foreignKey: "userId",
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
-      });
+      }),
+      Tripx.hasOne(models.Bookmarkx, {
+        foreignKey: "journeyId",
+      })
     }
   };
   Tripx.init({

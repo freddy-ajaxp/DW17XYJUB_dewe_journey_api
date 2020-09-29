@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2020 at 09:10 AM
+-- Generation Time: Sep 29, 2020 at 07:47 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.2
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `dw17-final`
 --
+CREATE DATABASE IF NOT EXISTS `dw17-final` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `dw17-final`;
 
 -- --------------------------------------------------------
 
@@ -170,7 +172,7 @@ ALTER TABLE `bookmarkxes`
 -- AUTO_INCREMENT for table `tripxes`
 --
 ALTER TABLE `tripxes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `userxes`
 --
