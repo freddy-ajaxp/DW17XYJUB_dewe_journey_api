@@ -4,7 +4,6 @@ var express = require("express");
 var router = express.Router();
 
 exports.fileUpload = (fileName) => {
-  //   console.log("filename adalah", fileName);
   let namaFileUpload;
   var storage = multer.diskStorage({
     destination: function (req, file, cb) {
